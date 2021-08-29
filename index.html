@@ -5,13 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal DB API</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon link -->
     <link rel="shortcut icon" href="img/fav-burger.png" type="image/x-icon">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>The Meal DB</h1>
+    <header>
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fw-bold py-3">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <img class="img-fluid" src="img/mealdb-logo.png" alt="mealdb logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">API</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Forum</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-square text-primary fs-4"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter-square text-info fs-4"></i></a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- nav bar end -->
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="text-center fw-normal fs-6 w-50 mx-auto mt-4">
+                <h1>Welcome to TheMealDB</h1>
+                <p>Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.
+                We also offer a <span class="text-danger fw-bold">free JSON API</span> for anyone wanting to use it.
+                If you like the site, please consider supporting us on Patreon by clicking the link below...</p>
+                <img class="img-fluid" src="img/support-us.png" alt="support image">
+                <h6 class="text-danger">Click to Support: Currently 650 supporters</h6>
+            </div>
+            <hr class="horijontal mt-4">
+            <!-- search button and input -->
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input type="text" class="form-control" placeholder="Search meal" aria-label="Search meal" aria-describedby="button-addon2">
+                <button class="btn btn-primary fw-bold" type="button" id="button-addon2">Search</button>
+              </div>
+              <div class="text-center">
+                  <h6><span class="ps-3">Total Meals: 282</span><span class="ps-3">Total Ingredients: 574</span><span class="ps-3">Images: 282</span></h6>
+              </div>
+              <hr class="horijontal">
+              <h4 class="text-center">Meal Results...</h4>
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
